@@ -20,16 +20,16 @@ namespace SnakeGame
             switch(key.Key)
             {
                 case ConsoleKey.LeftArrow:
-                    _screen.MoveCursorLeft();
+                    _screen.MoveCursor(Screen.Movement.Left);
                     break;
                 case ConsoleKey.RightArrow:
-                    _screen.MoveCursorRight();
+                    _screen.MoveCursor(Screen.Movement.Right);
                     break;
                 case ConsoleKey.UpArrow:
-                    _screen.MoveCursorUp();
+                    _screen.MoveCursor(Screen.Movement.Up);
                     break;
                 case ConsoleKey.DownArrow:
-                    _screen.MoveCursorDown();
+                    _screen.MoveCursor(Screen.Movement.Down);
                     break;
                 default:
                     break;

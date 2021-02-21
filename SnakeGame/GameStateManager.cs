@@ -8,6 +8,8 @@ namespace SnakeGame
 {
     public class GameStateManager
     {
+        public static int _startingHealth = 4;
+        int _health = _startingHealth;
         GameStates _state = GameStates.NotStarted;
         Action _callback;
 
@@ -19,6 +21,16 @@ namespace SnakeGame
         public GameStates GetGameState()
         {
             return _state;
+        }
+
+        public int GetHealth()
+        {
+            return _health;
+        }
+
+        public void AddHealth()
+        {
+            _health++;
         }
 
         public void SetGameState(GameStates state)

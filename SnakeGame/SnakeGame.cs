@@ -18,6 +18,8 @@ namespace SnakeGame
 
             _stateManager.SetGameState(GameStateManager.GameStates.GameInProgress);
 
+            _screen.DrawUI();
+
             while (_stateManager.GetGameState() != GameStateManager.GameStates.GameEnded)
             {
                 _screen.DrawScreen();
